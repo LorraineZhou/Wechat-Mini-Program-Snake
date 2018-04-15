@@ -1,0 +1,63 @@
+<!--snake.wxml-->
+<view class="control">
+
+<view class="score" style="flex-direction:row; width:700rpx; height:150rpx; ">
+
+<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+
+<view class="scoredetail scorebox" style="flex-direction:column;">
+        <view class="scoredesc" >当前成绩</view>
+        <view class="scorenumber" >{{score}}</view>
+</view>
+<view class="scoredetail2 scorebox" style="flex-direction:column;">
+        <view class="scoredesc">历史最高</view>
+        <view class="scorenumber2">{{maxscore}}</view>
+</view>
+
+</view>
+
+<view class="ground" style='backgound-color:grey'>
+    <view wx:for="{{ground}}"  class="rows" wx:for-item="cols">
+        <view wx:for="{{cols}}" class="block block_{{item}}" >
+        </view>
+    </view>
+</view>
+
+  <view style="flex-direction:row;">
+
+    <view class="btnstyle1" style="flex-direction:column; height:40px;" >
+        <button class="btnturn mini-btnsx" bindtap="btntop" >
+           <image class="btnicon" src="/img/up.png" ></image>
+        </button>
+    </view>
+
+    <view class="btnstyle2" style="flex-direction:row;">
+      <button class=" btnturn mini-btnleft"  bindtap="btnleft">
+         <image class="btnicon" src="/img/left.png"></image>
+      </button>
+      <button class="mini-btn" disabled="flase" type="default" style="background:#fbf8ef; width:80rpx; height:80rpx;" ></button>
+      <button class="btnturn mini-btn "  bindtap="btnright">
+        <image class="btnicon" src="/img/right.png"></image>
+      </button>
+
+       <view class="btnstyle4" >
+          <button class="btnspeed" bindtouchstart="speedup" bindtouchend="speedlow">
+            <image class="btnicon" src="/img/speed.png"></image>
+            <view style='margin-left:0px; margin-right:0px; font-size:15px;'>加速</view>
+          </button>
+       </view>
+    </view>
+
+    <view class="btnstyle3"style="flex-direction:colunm;">
+      <button class="btnturn mini-btnsx "   style="margin-top:10rpx" bindtap="btnbottom">
+        <image class="btnicon" src="/img/down.png"></image>
+      </button>
+    </view>
+
+</view>
+
+  <modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange">
+      <view calss="again" style='text-align: center;'>再试一次？</view>
+  </modal>
+
+</view>

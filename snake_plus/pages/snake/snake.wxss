@@ -1,0 +1,200 @@
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  margin-right: 100rpx;
+  margin-left:50rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    
+}
+
+.scorebox{
+  background-color: #b9ab9f;
+  color:#ffffff;
+  padding:10rpx;
+}
+
+.again {
+    
+    text-align: center;
+   
+}
+
+.title{
+    flex:1;
+    height: 40rpx;
+    line-height: 40rpx;
+    background:deepskyblue;
+    margin: 10rpx 40rpx 10rpx 10rpx;
+    text-align: center;
+    font-size: 0.7rem;
+    color: white;
+    border-radius: 8rpx;
+}
+
+
+.scoredetail{
+    flex:1;
+    margin: 10rpx 20rpx 20rpx 10rpx;
+    text-align: center;
+    border-radius: 8rpx;
+    display:flex;
+    
+}
+.scoredetail2{
+    flex:1;
+    margin: 10rpx 20rpx 20rpx 10rpx;
+    text-align: center;
+    border-radius: 8rpx;
+    display:flex;
+}
+
+.btnstyle1{
+    flex:1;
+    height: 70rpx;
+    background:#fcf8ef;
+    margin: 10rpx 520rpx 10rpx 10rpx;
+    display:flex;
+}
+.btnstyle2{
+    flex:1;
+    height: 70rpx;
+    background:#fcf8ef;
+    margin: 0rpx 10rpx 0rpx 10rpx;
+    display:flex;
+    
+}
+.btnstyle3{
+    flex:1;
+    height: 70rpx;
+    background:#fcf8ef;
+    margin: 10rpx 10rpx 10rpx 10rpx;
+    display:flex;
+    
+}
+
+.btnstyle4{
+    flex:1;
+    height: 70rpx;
+    background:#fcf8ef;
+    margin: 0rpx 10rpx 0rpx 100rpx;
+  
+    
+}
+
+.btnturn{
+  background: #ffb662;
+  color:#ffffff;
+  width:80rpx;
+  height:80rpx;
+  margin:0px;
+  margin-left:0px;
+  padding:0px;
+    
+}
+
+.btnspeed{
+  background:#f55d3a;
+  color:#ffffff;
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  text-align: center;
+  width: 150rpx;
+  height: 80rpx;
+  padding: 0rpx;
+}
+
+.btnicon{
+   width:40px; 
+   height:40px;
+
+}
+
+.scoredetail:last-child{
+    margin-right: 40rpx;
+}
+
+.scoredesc{
+    font-size: 0.8rem;
+    line-height: 40rpx;
+    margin: 0rpx 0rpx 0rpx 0rpx;
+    
+}
+.scorenumber{
+    font-size: 0.8rem;
+    line-height: 40rpx;
+    margin: 0rpx 0rpx 0rpx 0rpx;
+}
+.scorenumber2{
+    font-size: 0.8rem;
+    line-height: 40rpx;
+    margin: 0rpx 0rpx 0rpx 0rpx;
+}
+.ground{
+    width: 640rpx;
+    height:800rpx;
+    margin: 0rpx 0rpx 0rpx 50rpx;
+    background: #ccc0b2;
+}
+.block{
+    width:20rpx;
+    height:20rpx;
+    float: left;
+    background: #ccc0b2;
+    border-radius: 10rpx;
+}
+.rows{
+    width: 640rpx;
+    height:20rpx;
+}
+.control{
+    width: 100%;
+    height: 100%;
+    background-color: #fcf8ef;
+    margin-bottom: 0px;
+}
+.block_1{
+    background:#f59562;
+}
+.block_2{
+    background:green;
+}
+.block_3{
+    background:#f65d3a;
+}
+.block_4{
+    background:#ffffff;
+}
+.mini-btn{
+  margin-left: 10rpx;
+  background-color:#ffb661;
+}
+.mini-btnleft{
+  margin-left: 60rpx;
+}
+.mini-btnsx{
+  margin-left: 150rpx;
+  background-color:#ffb661;
+}
+
+.page-body{
+    width: 400rpx;
+    height:50rpx;
+    margin: 10rpx 0rpx 0rpx 0rpx;
+    background: #eeeeee;
+}
+
+page{
+  background-color: #fcf8ef;
+}
